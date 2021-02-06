@@ -1,0 +1,15 @@
+%table.table
+  %thead
+    %tr
+      %th image
+      %th name
+      %th{colspan: "3"}
+  %tbody
+    - users.each do |user|
+      %tr
+        %td
+          = attachment_image_tag user, :profile_image, fallback: "no-image-icon.jpg", size: "50x50"
+        %td
+          = user.name
+        %td
+          = link_to 'Show', user, class: "user_#{user.id}"
