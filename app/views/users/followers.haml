@@ -1,0 +1,7 @@
+%h2 
+  = "#{@user.name}のフォロワー一覧"
+- @user.followers.each do |u|
+  = link_to user_path(u) do
+    = attachment_image_tag u, :profile_image, fallback: "no-image-icon.jpg", size: "50x50"
+  = link_to u.name, user_path(u)
+

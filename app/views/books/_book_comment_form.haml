@@ -1,0 +1,5 @@
+= form_with model: [book, book_comment], method: :post, remote: true do |f|
+  .form-group
+    = f.text_area :content, size: "90x5"
+  .form-group
+    = f.submit '送信'

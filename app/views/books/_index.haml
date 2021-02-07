@@ -15,4 +15,6 @@
           = link_to book.title, book, class: "book_#{book.id}"
         %td 
           = book.body
+        %td{id: "favorite_btn_#{book.id}"}
+          = render 'books/favorite_box', book: book
   

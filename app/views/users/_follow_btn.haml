@@ -1,0 +1,6 @@
+- if current_user.following?(user)
+  = form_with(url: user_relationships_path(user.id), method: :delete, remote: true) do |f|
+    = f.submit "フォローを外す", class: "btn btn-danger"
+- else
+  = form_with(url: user_relationships_path(user.id), remote: true) do |f|
+    = f.submit "フォローする", class: "btn btn-primary"
