@@ -12,11 +12,11 @@
   %tr
     %th following
     %th.following-count 
-      = render 'following_count', user: user
+      = render 'users/following_count', user: user
   %tr
     %th followed
     %th.followers-count
-      = render 'followers_count', user: user
+      = render 'users/followers_count', user: user
 - if user == current_user
   .edit-btn
     = link_to '', edit_user_path(user), class: "btn btn-outline-secondary btn-block fas fa-user-cog edit_user_#{user.id}"
