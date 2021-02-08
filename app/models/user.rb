@@ -19,7 +19,6 @@ class User < ApplicationRecord
   has_many :followers,                through: :passive_relationships,
                                        source: :follower
   
-  
   attachment :profile_image, destroy: false
 
   validates :name, length: {maximum: 20, minimum: 2}, uniqueness: true
