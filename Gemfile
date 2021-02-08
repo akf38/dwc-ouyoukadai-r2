@@ -71,3 +71,4 @@ gem 'font-awesome-sass', '~> 5.13'
 gem 'bootstrap', '~> 4.5'
 gem "haml-rails", "~> 2.0"
 gem 'jp_prefecture'
+gem 'dotenv-rails'
