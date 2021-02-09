@@ -54,3 +54,22 @@ div {
 .search-form{
   text-align: center;
 }
+
+// チャットルーム
+.chat-room{
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message-from-u{
+  text-align: left;
+}
+
+.message-from-cu{
+  text-align: right;
+}
+
+.comment-submit-btn{
+  display: none;
+}

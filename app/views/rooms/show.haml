@@ -1,0 +1,5 @@
+.chat-room
+  %h2= "#{@user.name}とのチャットルーム"
+  
+  .messages-container
+    = render 'rooms/messages_container', room: @room, user: @user, message: @message

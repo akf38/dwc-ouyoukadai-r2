@@ -1,0 +1,1 @@
+$(".messages-container").html('<%= escape_javascript(render partial: "rooms/messages_container", locals: {room: @room, user: @user, message: @message}) %>');
